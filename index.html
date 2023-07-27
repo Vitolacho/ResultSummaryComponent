@@ -5,43 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <section class="full-container">
+    <div class="component-container row">
+      <div class="col-12 col-sm-6 side-A">
+        <h3 class="title">Your Result</h3>
+        <div class="result-display">
+          <h1 class="result-main">76</h1>
+          <p class="result-base">of 100</p>
+        </div>
+        <h2 class="subtitle">Great</h2>
+        <p class="message">You scored higher than 65% of the people who have taken these tests</p>
+      </div>
+      <div class="col-12 col-sm-6 side-B">
+        <h3 class="title">Summary</h3>
+        <div class="snackbar snackRed">
+          <div class="snack-leftSide">
+            <img src="/assets/images/icon-reaction.svg" alt="Reaction">
+            <p class="snackText">Reaction</p>
+          </div>
+          <div class="snack-rightSide">
+            <p class="current-score">80</p>
+            <p class="slash">/</p>
+            <p class="base-score">100</p>
+          </div>
+        </div>
+        <div class="snackbar snackYellow">
+          <div class="snack-leftSide">
+            <img src="/assets/images/icon-memory.svg" alt="Memory">
+            <p class="snackText">Memory</p>
+          </div>
+          <div class="snack-rightSide">
+            <p class="current-score">92</p>
+            <p class="slash">/</p>
+            <p class="base-score">100</p>
+          </div>
+        </div>
+        <div class="snackbar snackGreen">
+          <div class="snack-leftSide">
+            <img src="/assets/images/icon-verbal.svg" alt="Verbal">
+            <p class="snackText">Verbal</p>
+          </div>
+          <div class="snack-rightSide">
+            <p class="current-score">61</p>
+            <p class="slash">/</p>
+            <p class="base-score">100</p>
+          </div>
+        </div>
+        <div class="snackbar snackBlue">
+          <div class="snack-leftSide">
+            <img src="/assets/images/icon-visual.svg" alt="Visual">
+            <p class="snackText">Visual</p>
+          </div>
+          <div class="snack-rightSide">
+            <p class="current-score">72</p>
+            <p class="slash">/</p>
+            <p class="base-score">100</p>
+          </div>
+        </div>
+        <button class="comp-btn">Continue</button>
+      </div>
+    </div>
+  </section>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Vitolacho</a>.
+  </div> -->
 </body>
 </html>
